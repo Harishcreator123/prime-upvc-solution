@@ -1,0 +1,5 @@
+# Robots.txt for PRIME UPVC SOLUTION
+User-agent: *
+Allow: /
+
+Sitemap: https://primeupvc.example.com/sitemap.xml
