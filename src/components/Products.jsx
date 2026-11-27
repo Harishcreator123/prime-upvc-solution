@@ -81,11 +81,12 @@ export default function Products({ onOpenEnquiry }) {
               className="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-gold-500/40 transition-all duration-300 flex flex-col group"
             >
               {/* Product Image Frame */}
-              <div className="relative h-56 sm:h-52 overflow-hidden bg-slate-900">
+              <div className="relative aspect-[4/3] sm:h-56 overflow-hidden bg-slate-100 flex items-center justify-center">
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
+                  loading="lazy"
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Category Pill */}
                 <div className="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-gold-400 border border-gold-400/20 uppercase tracking-wider">

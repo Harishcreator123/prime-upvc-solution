@@ -37,11 +37,11 @@ export default function ProductDetailModal({ product, onClose, onEnquire }) {
         {/* Modal Body */}
         <div className="p-6 max-h-[75vh] overflow-y-auto">
           {/* Main Image with Badge */}
-          <div className="relative rounded-xl overflow-hidden mb-6 h-64 sm:h-80 bg-slate-900">
+          <div className="relative rounded-xl overflow-hidden mb-6 h-64 sm:h-96 bg-slate-100 flex items-center justify-center">
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
             <div className="absolute top-4 left-4 bg-navy-950/80 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-gold-400 border border-gold-400/30">
               Karanampettai, Coimbatore
